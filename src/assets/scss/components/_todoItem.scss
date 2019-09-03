@@ -1,0 +1,38 @@
+.TodoItem {
+    @extend %flexing;
+    @extend %item-outline;
+    
+    display: flex !important;
+    align-items: center;
+    position: relative;
+    min-height: 57px;
+    padding: 0 15px;
+    margin-bottom: 15px !important;
+    background: $todo-bg;
+    text-align: left;
+    
+
+    &:hover {
+        background: $todo-bg-hover;
+    }
+
+    &__title {
+        font-size: $font-size-default;
+    }
+
+    &__removeButton {
+        position: absolute;
+        right: 0;
+        padding: 0 10px;
+        line-height: 57px;
+        cursor: pointer;
+
+        svg {
+            width: 1em;
+            
+            path {
+                fill: #aeaeae;
+            }
+        }
+    }
+}

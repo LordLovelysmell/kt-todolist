@@ -1,0 +1,35 @@
+@import '../variables';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: calc(100vw - 17px);
+    margin: 0;
+    background-color: $kt-bg;
+    overflow-x: hidden;
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+}
+
+%flexing {
+    display: flex;
+    align-items: center;
+}
+
+%item-outline {
+    border-radius: 8px;
+    box-shadow: 0 2px 3px 0 $shadow-color;
+}
+
+@import './components/_sticky';
+@import './components/_container';
+@import './components/_todoItem';
+@import './components/_todoInput';
+@import './components/_button';
+@import './components/_pagination';
